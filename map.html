@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="map.css">
+<body>
+
+<h1>Google Maps: Search</h1>
+
+<div id="map">
+</div>
+<form method="post" id="cords">
+  	<fieldset>
+		<label for="latitude">Latitude</label>
+			<input type="number" name="latitude" id="latitude" />
+					<label for="longitude">Longitude</label>
+						<input type="number" name="longitude" id="longitude" />
+					<label for="message">Message</label>
+						<input type="text" name="message" id="message" />
+						<button type="submit">Add</button>
+				</fieldset>
+			</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<script src="map.js"></script>
+</body>
+</html>
